@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo"><a href= "index.html"><i class="fas fa-code"></i>QuizOnWeb!</a></div>
+			<div class="toggle-button">
+				<i class="fas fa-bars" area-hidden ="true"></i>
+			</div>
+				<div class="navbar-links">
+					<ul>
+						<li><a href="login.html">LogIn</a></li>
+						<li><a href="topic.html">Read Topic</a></li>
+					</ul>
+				</div>
+		</nav>
+	</header>
+	
+	<div class="h1-heading">
+  		<h1>The Web Development Quiz</h1>
+  		<p>Do you think you know HTML, CSS, JS?</p>
+	</div>
+	
+		<div class="container">
+			<div class="box-1">
+				<i class="fab fa-html5 fa-5x"></i>
+				<div class="caption">
+        			<h3>HTML5</h3>
+        			<p>Revisit HTML5 basics</p>
+        			<a href="topic.html#intro-html" class="htmlbutton">HTML</a>
+      			</div>
+			</div>
+  			<div class="box-2">
+  				 <i class="fab fa-css3 fa-5x"></i>
+  				 <div class="caption">
+        			<h3>CSS3</h3>
+        			<p>Revisit CSS3 basics</p>
+        			<a href="topic.html#intro-css" class="cssbutton">CSS</a>
+      			</div> 
+  			</div>
+  			<div class="box-3">
+  				<i class="fab fa-js fa-5x"></i>
+  				<div class="caption">
+        			<h3>JavaScript</h3>
+        			<p>Revisit JavaScript basics</p>
+        			<a href="topic.html#intro-js" class="jsbutton">JS</a>
+      			</div>
+  			</div>
+  		</div>
+<div class="btn">
+	<p><a href="quiz.html" class="startbutton">Start Quiz</a></p>
+</div>
+
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+    navbarlinks.classList.toggle('active')
+    })
+
+</script>
+
+<div class="footer">
+    <p>Copyright &#169; Swathi Kavuri</p>
+</div>
+ 
+
+</body>
+</html>
