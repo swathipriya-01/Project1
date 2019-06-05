@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href= "index.html"><i class="fas fa-code"></i>QuizOnWeb!</a></div>
+      <div class="toggle-button">
+        <i class="fas fa-bars" area-hidden ="true"></i>
+      </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="topic.html">Read Topic</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+<h1 class="h1-heading"> Welcome to the Quiz</h1>
+
+<div id="question-container"> 
+  <div class="form-style">
+      <form method="post" action="result.html" onsubmit="return "validateQuestions();" id="quizform">
+        <fieldset> 
+          <!--QUESTION ONE !-->
+          <label for="q1" class= "text-label"><strong>Q1) What does HTML stands for?</strong><p class="quespan">1 Point</p><span id="typedAns"></span></label> 
+
+            <input type="text" name = "que1" id="q1" placeholder="Enter your Answer" required pattern="[A-Za-z\s]*"><br> 
+
+
+            <!--QUESTION TWO !-->
+          <label class= "text-label"><strong>Q2) How to reprasent ordered list in HTML? </strong><p class="quespan">1 Point</p></label> 
+            <div class="radio">
+              <label for="q2option1">
+              <input type="radio" name="q2option" id="q2option1" value="q2option1">
+            	&ltli&gt
+              </label>
+            </div>
+          <div class="radio">
+            <label for="q2option2">
+              <input type="radio" name="q2option" id="q2option2" value="q2option2">
+               &ltol&gt
+            </label>
+          </div>
+           <div class="radio">
+            <label for="q2option3">
+              <input type="radio" name="q2option" id="q2option3" value="q2option3">
+              &lta&gt
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q2option3">
+              <input type="radio" name="q2option" id="q2option4" value="q2option4">
+              &ltul&gt
+            </label>
+          </div><br>
+            
+            <!--QUESTION THREE !-->
+
+          <label class= "text-label"><strong>Q3) The small text files that website place in a browser for tracking or login purpose is called as ?</strong><p class="quespan">1 Point</p></label>
+          <label class= "text-label" for="question3"></label> 
+			<select class="text-label" name="ans" id="question3">
+				<option value="none">Please select</option>
+				<option value="Local-storage">Local-storage</option>			
+				<option value="Session-storage">Session-storage</option>
+				<option value="Cache">Cache</option>
+				<option value="Cookie">Cookie</option>
+			</select>
+		  <br>
+
+            <!--QUESTION FOUR !-->
+            <label class= "text-label"><strong>Q4) Which of the following elements defines a row in a table?</strong> <p class="quespan">1 Point</p> </label> 
+            <div class="radio">
+              <label for="q4option1">
+              <input type="radio" name="q4option" id="q4option1" value="q4option1">
+              &lttable&gt
+              </label>
+            </div>
+          <div class="radio">
+            <label for="q4option2">
+              <input type="radio" name="q4option" id="q4option2" value="q4option2">
+              &lttd&gt
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q4option3">
+              <input type="radio" name="q4option" id="q4option3" value="q4option3">
+              &ltth&gt
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q4option3">
+              <input type="radio" name="q4option" id="q4option4" value="q4option4">
+              &lttr&gt
+            </label>
+          </div><br>
+
+            <!--QUESTION FIVE !-->
+            <label class= "text-label"><strong>Q5) What is the difference between class selector and ID selector?</strong> <p class="quespan">1 Point</p></label> 
+            <div class="radio">
+              <label for="q5option1">
+              <input type="radio" name="q5option" id="q5option1" value="q5option1">
+              Class selectors are reprasented with #className
+              </label>
+            </div>
+          <div class="radio">
+            <label for="q5option2">
+              <input type="radio" name="q5option" id="q5option2" value="q5option2">
+              Class selectors are reprasented with .className
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q5option3">
+              <input type="radio" name="q5option" id="q5option3" value="q5option3">
+              Class Name should be used only once in HTML page while ID can be used many times
+            </label>
+          </div><br>
+
+            <!--QUESTION SIX !-->             
+            <label class= "text-label"><strong>Q6) What does CSS box model contain?</strong> <p class="quespan">4 Points</p></label>
+            <div class="checkbox">
+              <label for="q6option1">
+                <input type="checkbox" value="" id="q6option1">
+                margin
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q6option2">
+              <input type="checkbox" value="" id="q6option2">
+                padding
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q6option3">
+              <input type="checkbox" value="" id="q6option3">
+                content
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q6option4">
+              <input type="checkbox" value="" id="q6option4">
+                border
+              </label>
+            </div><br>
+
+            <!--QUESTION SEVEN !-->
+            <label for="q7" class= "text-label"><strong>Q7) What does CSS stands for?</strong> <p class="quespan">1 Point</p></label> 
+            <input type="text" name = "que7" id="q7" placeholder="Enter your Answer" required pattern="[A-Za-z\s]*"><br>
+            
+            <!--QUESTION EIGHT !-->
+             <label class= "text-label"><strong>Q8) What are the JS functions used to convert non numerical values to Numbers?</strong> <p class="quespan">3 Points</p></label>
+            <div class="checkbox">
+              <label for="q8option1">
+                <input type="checkbox" value="" id="q8option1">
+                parseInt();
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q8option2">
+              <input type="checkbox" value="" id="q8option2">
+                parseFloat();
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q8option3">
+              <input type="checkbox" value="" id="q8option3">
+                Number();
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q8option4">
+              <input type="checkbox" value="" id="q8option4">
+                String();
+              </label>
+            </div><br>
+
+            <!--QUESTION NINE !-->
+            <label class= "text-label"><strong>Q9) What would be the result of 5+2+"3"?</strong> <p class="quespan">1 Point</p></label> 
+            <div class="radio">
+              <label for="q9option1">
+              <input type="radio" name="q9option" id="q9option1" value="q9option1" >
+              	10
+              </label>
+            </div>
+          <div class="radio">
+            <label for="q9option2">
+              <input type="radio" name="q9option" id="q9option2" value="q9option2" >
+             	73
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q9option3">
+              <input type="radio" name="q9option" id="q9option3" value="q9option3" >
+             	7
+            </label>
+          </div><br>
+            <!--QUESTION TEN !-->
+            <label class= "text-label"><strong>Q10) How do we refer to the current object in JS? </strong><p class="quespan">1 Point</p></label>
+            <div class="checkbox">
+              <label for="q10option1">
+                <input type="checkbox" value="" id="q10option1">
+                "this" keyword
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q10option2">
+              <input type="checkbox" value="" id="q10option2">
+                "if" keyword
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q10option3">
+              <input type="checkbox" value="" id="q10option3">
+                "new" keyword
+              </label>
+            </div>
+            <div class="checkbox">
+             <label for="q10option4">
+              <input type="checkbox" value="" id="q10option4">
+                "for" keyword
+              </label>
+            </div><br>
+
+            <button class= "startbutton " type="submit" id="submit">Submit Quiz</button>
+            <button class= "startbutton" type = button id= "resetbtn">Reset Quiz</button> 
+
+        </fieldset>
+      </form>   
+  </div>
+
+</div>
+
+<!-- <footer id="footer">
+  <p>Copyright &#169; Swathi</p>
+</footer> -->  
+<script src="scripts/quiz.js"></script>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+    navbarlinks.classList.toggle('active')
+    })
+
+</script>
+<div class="footer">
+    <p>Copyright &#169; Swathi Kavuri</p>
+</div>
+
+</body>
+</html>

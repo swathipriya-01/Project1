@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>topic page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo"><a href= "index.html"><i class="fas fa-code"></i>QuizOnWeb!</a></div>
+			<div class="toggle-button">
+				<i class="fas fa-bars" area-hidden ="true"></i>
+			</div>
+				<div class="navbar-links">
+					<ul>
+						<li><a href="login.html">LogIn</a></li>
+					</ul>
+				</div>
+		</nav>
+	</header>
+	<div class="h1-heading">
+  		<h1>Welcome Back to the Topic!!</h1>
+	</div>
+
+	<!-- <div class= "h2-heading">
+		<h2>Introduction to HTML</h2>
+	</div> -->
+	<aside>
+		<ul>
+			<li><a href="#intro-html" id= "hov1"><i class="fab fa-html5 fa-2x"></i> HTML</a></li>
+			<li><a href="#intro-css" id= "hov2"><i class="fab fa-css3 fa-2x"></i> CSS</a></li>
+			<li><a href="#intro-js" id="hov3"><i class="fab fa-js fa-2x"></i> JavaScript</a></li>
+		</ul>
+	</aside>
+
+	<article>
+		<section>
+			<h2 id="intro-html">Introduction to HTML</h2>
+			<p>HyperText Markup Language (HTML) or Extensible HyperText Markup Language (XHTML) are used to mark-up web page structure and content.</p>
+			
+			<h3>HTML Documents</h3>
+			<p>XML – eXtensible Markup Language is used for marking up any structured data, that is:
+			<ul>
+				<li>Human readable / Machine understandable</li>
+				<li>Device-independent and application-independent</li>
+				<li>Plain text</li>
+			</ul>
+			</p>
+			<p>HTML5 well-formed XML because
+			<ol>
+				<li>the webpage can be tested for well-formedness.</li>
+				<li>the webpage can be easily be parsed and read by a program</li>
+				<li>other XML mark-ups (MathML, SVG, Maps, etc.) can be embedded seamlessly.</li>
+			</ol>
+			</p>
+			<p>The structure of HTML documents is defined by the nesting of HTML elements to form a hierarchy. The “root” element of any html document, is the html element, which usually contains only two children head and body The head then contains the title, and other ‘head’ elements. The body can contain many other elements.</p>
+
+			<h3>HTML Body elements</h3>	
+			<p>A HTML element structure includes: start tag, tag name, an attribute name (eg. id) with an attribute value (eg. “intro”), the element content (the text affected by the tag meaning), and finally the end tag of the element. Void Elements are elements with no content or end tag. Elements are either block-level elements or inline elements. block-level elements are usually presented by the browser with line breaks to seperate them visually from other elements. inline elements occur inside the block-level elements.</p>
+
+			<table border="1">
+				<caption>Table of Table elements</caption>
+				<thead>
+					<tr>
+						<th scope="col">&lttable&gt</th>
+						<th scope="col">&ltcaption&gt</th>
+						<th scope="col">&lttr&gt</th>
+						<th scope="col">&ltth&gt</th>
+						<th scope="col">&lttd&gt</th>
+						<th scope="col">&lfoot&gt, &lhead&gt, &lbody&gt</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>declares a table</td>
+						<td>captions a table’s contents</td>
+						<td>defines a table row</td>
+						<td>defines a table header cell</td>
+						<td>defines a table data cell</td>
+						<td>defines table sections</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>HTML Structure</h3>
+			<p>HTML structure overall consists of &ltdiv&gt, &ltnav&gt, &ltspan&gt, &ltheader&gt, &ltarticle&gt, &ltsection&gt, &ltfooter&gt
+				<img src="https://www.htmlgoodies.com/imagesvr_ce/5493/semantic000.png" height="300" width="300">
+			</p>
+
+		</section>
+		
+		<section>
+			<h2 id="intro-css">Introduction to CSS</h2>
+			<p>CSS stands for CAscading style sheets it is used to present the content of the web page. Style sheets contain information as a collection of rules which start with selector and then contain style properties and values. The style sheet information can be either stored in a seperate external css file and link with a link element. Some of the examples of css selectors are elements, #id, .class, element.class.</p>
+
+			<h3>CSS box-model</h3>
+			<p>CSS box-model consists of margin, padding and the content. Margin allows us to seperate elements. The margins of adjacent elements overlap and the biggest margin is the gap that is displayed. Padding is placed between the border and the content. Media quires are used  for responsive presentation.</p>
+		</section>
+		
+		<section>
+			<h2 id="intro-js">Introduction to JS</h2>
+			<p>JavaScript uses scripting to control content behaviour. DOM is not part of core JavaScript, but JavaScript uses the DOM to interact with the Web browser. This technique is referred to as DOM manipulation. DOM uses JavaScript's Core Objects such as Array, Boolean, Date, Math, Number, RegExp, String.</p>
+
+			<h3>JS variables</h3>
+			<p>JavaScript is case sensitive use camelCase or under_score for compound names (be consistant) Use meaningful names for variable identifiers. local variables are declared with in a function. global variables are declared outside of the function. some of the data types of the variables are int, float, string. Assignment operators are used for assigning a value to a variable. Comparison operators are used to compare two operands and determine how one operand compares to another. Logical operators are used for comparing two Boolean operands for equality. Functions are groups of statements that you can execute as a single unit</p>
+		</section>
+	</article>
+	
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+    navbarlinks.classList.toggle('active')
+    })
+
+</script>
+
+<div class="footer">
+    <p>Copyright &#169; Swathi Kavuri</p>
+</div>
+</body>
+</html>
